@@ -1,9 +1,9 @@
-# qubithub-sdk
+# qubithub
 
 Python SDK and CLI for [QubitHub](https://qubithub.co) — developer infrastructure for quantum computing.
 
 ```bash
-pip install qubithub-sdk
+pip install qubithub
 ```
 
 ## Quick Start
@@ -33,7 +33,7 @@ qubithub config list
 ### Python SDK
 
 ```python
-from qubithub_sdk import QubitHubClient, RunCreateRequest
+from qubithub import QubitHubClient, RunCreateRequest
 
 client = QubitHubClient(token="your-jwt-token")
 
@@ -53,7 +53,7 @@ print(f"Run {run.id}: {run.status}")
 
 ```python
 import asyncio
-from qubithub_sdk import AsyncQubitHubClient, RunCreateRequest
+from qubithub import AsyncQubitHubClient, RunCreateRequest
 
 async def main():
     async with AsyncQubitHubClient(token="your-jwt-token") as client:
@@ -127,7 +127,7 @@ Global options: `--base-url`, `--api-key`, `--token`, `--format (rich|json)`.
 The SDK provides a granular exception hierarchy:
 
 ```python
-from qubithub_sdk import (
+from qubithub import (
     QubitHubError,       # Base — catch everything
     APIError,            # Any HTTP 4xx/5xx
     AuthenticationError, # 401

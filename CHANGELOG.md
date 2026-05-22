@@ -1,17 +1,20 @@
 # Changelog
 
-All notable changes to `qubithub-sdk` are documented in this file.
+All notable changes to `qubithub` (the Python SDK and CLI for QubitHub) are
+documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.2.0] — unreleased
 
-First functional release of `qubithub-sdk` — the Python SDK and CLI for
+First functional release of `qubithub` — the Python SDK and CLI for
 [QubitHub](https://qubithub.co), developer infrastructure for quantum computing.
 
-Supersedes `0.0.1` (2026-03-09), a non-functional name-reservation placeholder
-that has been yanked from PyPI.
+Published as `qubithub` (the package was previously slated for `qubithub-sdk`;
+`qubithub-sdk` and `qubithub-cli` are kept as thin alias packages that depend on
+`qubithub`). Supersedes the `0.0.1` name-reservation placeholder (2026-03-09),
+which has been yanked from PyPI.
 
 ### Added
 
@@ -48,4 +51,4 @@ that has been yanked from PyPI.
 - Supports Qiskit, Cirq, and PennyLane circuits executed against QubitHub's managed
   simulators.
 
-[0.2.0]: https://github.com/quantputation/qubithub-sdk/releases/tag/sdk-v0.2.0
+[0.2.0]: https://github.com/quantputation/qubithub/releases/tag/sdk-v0.2.0
